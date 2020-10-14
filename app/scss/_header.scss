@@ -1,0 +1,105 @@
+.header {
+    @include font('proxima-semibold');
+    font-size: 18px;
+    padding-top: 35px;
+
+    &__top {
+        text-align: right;
+    }
+
+    &__btn {
+        padding: 10px 15px;
+        color: #ffffff;
+        transition: .3s ease;
+        &:hover {
+            background-color: $primary;
+        }
+    }
+
+    &__btn-login {
+        background-color: #288423;
+    }
+
+    &__btn-register {
+        background-color: $accent;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__navigation {
+    }
+
+    &__logo {
+        flex-basis: 33.333%;
+    }
+
+    &__extra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__phone {
+    }
+
+    &__lang {
+        margin-left: 60px;
+    }
+
+    &__lang-item {
+        margin-left: 25px;
+
+        &.active {
+            @include font('proxima-black');
+            color: $accent;
+        }
+        
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.navigation {
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        position: relative;
+        display: inline-block;
+        
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0) translateX(-100%);
+            background-color: #000000;
+            transition: .3s ease;
+        }
+
+        &:hover {
+            &::before {
+                transform: scaleX(1) translateX(0);
+            }
+        }
+    }
+
+    &__item:not(:first-child) {
+        margin-left: 40px;
+    }
+
+    &__link {
+    }
+}
