@@ -1,3 +1,11 @@
+@media (max-width: 1520px) {
+    .services {
+        &__item {
+            max-width: 500px;
+        }
+    }
+}
+
 @media (max-width: 1280px) {
     .header {
         &__logo {
@@ -94,6 +102,10 @@
         line-height: 42px;
     }
 
+    .title {
+        font-size: 34px;
+    }
+
     .main-slider {
         &__item {
             height: 300px;
@@ -104,6 +116,28 @@
         
         .swiper-pagination {
             font-size: 24px;
+        }
+    }
+
+    .btn {
+        font-size: 26px;
+        min-width: auto;
+        width: 260px;
+    }
+
+    .services {
+        &__list {
+            margin-bottom: 50px;
+        }
+
+        &__head {
+            &::after {
+                width: 120px;
+            }
+        }
+
+        &__item-title {
+            font-size: 30px;
         }
     }
 }

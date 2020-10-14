@@ -34,6 +34,11 @@ $green: #288423;
         font-weight: 700;
     }
 
+    @if $name == 'proxima-extrabold' {
+        font-family: 'ProximaNova-ExtraBld', Arial, Helvetica, sans-serif;
+        font-weight: 800;
+    }
+
     @if $name == 'proxima-black' {
         font-family: 'ProximaNova-Black', Arial, Helvetica, sans-serif;
         font-weight: 900;
