@@ -136,8 +136,6 @@
                 if (_this.scrollRatio >= 1) {
                     _this.bar.classList.add('ss-hidden')
                 } else {
-                    console.log(_this.scrollRatio);
-                    console.log(_this.scrollHeight);
                     _this.bar.classList.remove('ss-hidden')
                     _this.bar.style.cssText = 'height:' + Math.max(_this.scrollRatio * 100, 10) + '%; top:' + (_this.el.scrollTop / totalHeight) * 100 + '%;right:' + right + 'px;';
                 }
