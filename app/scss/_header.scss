@@ -8,9 +8,12 @@
     }
 
     &__btn {
+        display: inline-block;
         padding: 10px 15px;
         color: #ffffff;
+        text-align: center;
         transition: .3s ease;
+
         &:hover {
             background-color: $primary;
         }
@@ -25,16 +28,25 @@
     }
 
     &__main {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-    }
 
-    &__navigation {
+        &.active {
+            .navigation__list {
+                display: flex;
+            }
+
+            .header__extra {
+                display: flex;
+            }
+        }
     }
 
     &__logo {
+        order: 1;
         flex-basis: 33.333%;
     }
 
@@ -42,9 +54,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    &__phone {
+        order: 3;
     }
 
     &__lang {
@@ -58,7 +68,7 @@
             @include font('proxima-black');
             color: $accent;
         }
-        
+
         &:first-child {
             margin-left: 0;
         }
@@ -71,12 +81,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     &__link {
         position: relative;
         display: inline-block;
-        
+
         &::before {
             position: absolute;
             content: "";
@@ -100,6 +111,61 @@
         margin-left: 40px;
     }
 
-    &__link {
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    z-index: 99;
+    transition: all .3s ease;
+}
+
+.menu-btn::before,
+.menu-btn::after {
+    content: "";
+    width: 26px;
+    height: 4px;
+    margin-bottom: 4px;
+    display: block;
+    background-color: $accent;
+    transition: all .3s ease;
+    border-radius: 2px;
+}
+
+.menu-btn::after {
+    margin-bottom: 0;
+}
+
+.menu-btn span {
+    background-color: $accent;
+    display: block;
+    width: 26px;
+    height: 4px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+
+.menu-btn.active span {
+    opacity: 0;
+}
+
+.menu-btn.active::after {
+    transform: rotate(-45deg);
+}
+
+.menu-btn.active::before {
+    transform: rotate(45deg);
+    margin-bottom: -12px;
+}
+
+.header__navigation.active {
+    .navigation__list {
+        display: block;
     }
 }
