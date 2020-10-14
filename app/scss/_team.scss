@@ -1,0 +1,50 @@
+.team {
+    padding-top: 120px;
+    padding-bottom: 140px;
+
+    &__title {
+        margin-bottom: 55px;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        line-height: 30px;
+        flex-basis: 50%;
+        margin-bottom: 60px;
+    }
+
+    &__box {
+        color: #ffffff;
+        margin-left: -60px;
+        padding: 30px 20px;
+    }
+
+    &__img {
+        background-color: #eaedea;
+        border-radius: 50%;
+        img {
+            padding-top: 20px;
+            border-radius: 50%;
+        }
+    }
+
+    &__name {
+        @include font('proxima-semibold');
+        margin-bottom: 15px;
+    }
+
+    &__position {
+        @include font('proxima-light');
+    }
+}

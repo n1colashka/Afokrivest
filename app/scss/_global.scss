@@ -137,3 +137,23 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+
+.bevel {
+    position: relative;
+    z-index: 20;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 3px solid transparent;
+        transform: skewX(-10deg);
+        background-color: $accent;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        transition: .3s ease;
+    }
+
+}

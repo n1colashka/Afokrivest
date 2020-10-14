@@ -1,0 +1,28 @@
+.partners {
+
+    padding: 110px 0;
+    background-color: #f8f8f8;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 85px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex-basis: calc(25% - 50px);
+        margin-bottom: 70px;
+        margin-left: 50px;
+        &:nth-child(4n + 1) {
+            flex-basis: 25%;
+            margin-left: 0;
+        }
+    }
+}
+
