@@ -40,8 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  var el = document.querySelector('.benefits__info');
-  SimpleScrollbar.initEl(el);
+  function initScrollBar() {
+    var el = document.querySelector('.benefits__info');
+    SimpleScrollbar.initEl(el);
+  }
+
+  initScrollBar();
   initMenu();
   initMainSlider();
 });
