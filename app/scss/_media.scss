@@ -4,6 +4,21 @@
             max-width: 500px;
         }
     }
+
+    .benefits {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__info-wrapper {
+            order: -1;
+            margin-bottom: 50px;
+        }
+
+        &__text {
+            max-width: 100%;
+        }
+    }
 }
 
 @media (max-width: 1280px) {
@@ -104,6 +119,7 @@
 
     .title {
         font-size: 34px;
+        line-height: 46px;
     }
 
     .main-slider {
@@ -138,6 +154,24 @@
 
         &__item-title {
             font-size: 30px;
+        }
+    }
+
+    .benefits {
+        &__title {
+            margin-right: 35px;
+        }
+
+        &__scroll-line {
+            right: 0;
+        }
+
+        .ss-scroll {
+            width: 12px;
+        }
+
+        &__text-black {
+            font-size: 20px;
         }
     }
 }

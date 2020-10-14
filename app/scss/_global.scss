@@ -64,10 +64,10 @@ h6 {
 .title {
     @include font('proxima-light');
     font-size: 48px;
+    line-height: 64px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $primary;
-    text-align: center;
 }
 
 .title--white {

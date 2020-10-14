@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    var el = document.querySelector('.benefits__info');
+    SimpleScrollbar.initEl(el);
+    
     initMenu();
     initMainSlider();
 });
