@@ -7,6 +7,10 @@
         text-align: right;
     }
 
+    &__inner {
+        margin-bottom: 100px;
+    }
+
     &__btn {
         display: inline-block;
         padding: 10px 15px;
@@ -20,7 +24,7 @@
     }
 
     &__btn-login {
-        background-color: #288423;
+        background-color: $green;
     }
 
     &__btn-register {

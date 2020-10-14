@@ -4,41 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Афокривест - главная</title>
+    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header class="header">
         <div class="container">
-            <div class="header__top">
-                <a href="#" class="header__btn header__btn-register">Регистрация</a>
-                <a href="#" class="header__btn header__btn-login">Вход в личный кабинет</a>
-            </div>
-            <div class="header__main">
-                <a class="header__logo" href="#">
-                    <img src="images/logo.png" alt="Афокривест логотип">
-                </a>
-                <nav class="header__navigation navigation">
-                    <div class="menu-btn"><span></span></div>
-                    <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#" class="navigation__link">О нас</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Услуги</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Партнерам</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Блог</a></li>
-                    </ul>
-                </nav>
-                <div class="header__extra">
-                    <a class="header__phone" href="tel:+380952860182">+380 95 286 01 82</a>
-                    <div class="header__lang">
-                        <a class="header__lang-item active" href="#">RU</a>
-                        <a class="header__lang-item" href="#">UA</a>
+            <div class="header__inner">
+                <div class="header__top">
+                    <a href="#" class="header__btn header__btn-register">Регистрация</a>
+                    <a href="#" class="header__btn header__btn-login">Вход в личный кабинет</a>
+                </div>
+                <div class="header__main">
+                    <a class="header__logo" href="#">
+                        <img src="images/logo.png" alt="Афокривест логотип">
+                    </a>
+                    <nav class="header__navigation navigation">
+                        <div class="menu-btn"><span></span></div>
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="#" class="navigation__link">О нас</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Услуги</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Партнерам</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Блог</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__extra">
+                        <a class="header__phone" href="tel:+380952860182">+380 95 286 01 82</a>
+                        <div class="header__lang">
+                            <a class="header__lang-item active" href="#">RU</a>
+                            <a class="header__lang-item" href="#">UA</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <section class="main-slider">
+        <div class="container">
+            <div class="main-slider__inner">
+                <div class="main-slider__head">
+                    <h1 class="main-slider__title page-title">Общественный союз (организация) ассоциация</h1>
+                    <div class="main-slider__text">
+                        <p>
+                            фруктово-овощных,  цветочно-растительных импортеров, производителей, экспортёров сельскохозяйственных и других товаров
+                        </p>
+                    </div>
+                </div>
+                <div class="main-slider__content swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="main-slider__item swiper-slide" style="background-image: url('images/main-slider-1.jpg')"></div>
+                        <div class="main-slider__item swiper-slide" style="background-image: url('images/main-slider-1.jpg')"></div>
+                        <div class="main-slider__item swiper-slide" style="background-image: url('images/main-slider-1.jpg')"></div>
+                        <div class="main-slider__item swiper-slide" style="background-image: url('images/main-slider-1.jpg')"></div>
+                    </div>
+                </div>
+                <div class="swiper-panel">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <script src="js/libs.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

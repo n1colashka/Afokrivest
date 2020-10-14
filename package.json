@@ -36,10 +36,9 @@
     "gulp-webp": "^4.0.1",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
+    "swiper": "^6.3.3",
     "vinyl-buffer": "^1.0.1",
     "yargs": "^15.4.1"
   },
-  "dependencies": {
-    "swiper": "^6.1.2"
-  }
+  "dependencies": {}
 }

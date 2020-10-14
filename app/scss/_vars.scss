@@ -1,5 +1,6 @@
 $accent: #ea3d07;
 $primary: #094444;
+$green: #288423;
 
 @mixin font($name) {
 
@@ -14,7 +15,7 @@ $primary: #094444;
     }
 
     @if $name == 'proxima-thin' {
-        font-family: 'ProximaNova-Thin', Arial, Helvetica, sans-serif;
+        font-family: 'ProximaNovaT-Thin', Arial, Helvetica, sans-serif;
         font-weight: 200;
     }
 

@@ -12,6 +12,13 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .page-title {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
 @media (max-width: 991px) {
     .header {
         &__logo {
@@ -65,6 +72,38 @@
         
         .menu-btn {
             display: block;
+        }
+    }
+
+    .swiper-panel {
+        
+        .swiper-pagination {
+            font-size: 36px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .page-title {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .main-slider {
+        &__item {
+            height: 300px;
+        }
+    }
+
+    .swiper-panel {
+        
+        .swiper-pagination {
+            font-size: 24px;
         }
     }
 }
