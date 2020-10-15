@@ -47,18 +47,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (tabButtons) {
       tabButtons.addEventListener('click', function (event) {
-        if (event.target.classList.contains('services-page__item')) {
+        if (event.target.classList.contains('services-page__item') || event.target.closest('.services-page__item')) {
           tabContent.forEach(function (item) {
             item.classList.remove('active');
 
-            if (item.dataset.tab === event.target.dataset.tab) {
+            if (item.dataset.tab === event.target.closest('.services-page__item').dataset.tab) {
               item.classList.add('active');
             }
           });
           tabButton.forEach(function (item) {
             item.classList.remove('active');
 
-            if (item.dataset.tab === event.target.dataset.tab) {
+            if (item.dataset.tab === event.target.closest('.services-page__item').dataset.tab) {
               item.classList.add('active');
             }
           });

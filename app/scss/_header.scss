@@ -13,7 +13,7 @@
 
     &__btn {
         display: inline-block;
-        padding: 10px 15px;
+        padding: 3px 15px;
         color: #ffffff;
         text-align: center;
         transition: .3s ease;
@@ -29,6 +29,7 @@
 
     &__btn-register {
         background-color: $accent;
+        margin-right: 55px;
     }
 
     &__main {

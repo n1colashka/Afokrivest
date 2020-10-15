@@ -46,17 +46,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const tabContent= document.querySelectorAll('.services-page__content-item');
         if (tabButtons) {
             tabButtons.addEventListener('click', event => {
-                if (event.target.classList.contains('services-page__item')) {
+                if (event.target.classList.contains('services-page__item') || event.target.closest('.services-page__item')) {
                     tabContent.forEach(item => {
                         item.classList.remove('active');
 
-                        if (item.dataset.tab === event.target.dataset.tab) {
+                        if (item.dataset.tab === event.target.closest('.services-page__item').dataset.tab) {
                             item.classList.add('active');
                         }
                     });
                     tabButton.forEach(item => {
                         item.classList.remove('active');
-                        if (item.dataset.tab === event.target.dataset.tab) {
+                        if (item.dataset.tab === event.target.closest('.services-page__item').dataset.tab) {
                             item.classList.add('active');
                         }
                     });

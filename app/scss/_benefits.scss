@@ -8,10 +8,6 @@
         flex-wrap: wrap;
     }
 
-    &__img {
-        
-    }
-
     &__title {
         padding-top: 10px;
         margin-bottom: 60px;
@@ -28,7 +24,7 @@
 
     &__scroll-line {
         position: absolute;
-        right: 8px;
+        right: 7px;
         top: 50%;
         transform: translateY(-50%);
         background: url('../images/scrollbar.svg') center no-repeat;
