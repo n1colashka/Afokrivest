@@ -143,15 +143,16 @@ address {
     }
 }
 
-// Input number fix
+.post-date {
+    display: inline-block;
+    margin-bottom: -25px;
+    text-align: center;
+    padding: 15px 25px;
+    color: #ffffff;
 
-input[type='number'] {
-    -moz-appearance:textfield;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    &::before {
+        background-color: $green;
+    }
 }
 
 .bevel {
@@ -165,7 +166,6 @@ input::-webkit-inner-spin-button {
         height: 100%;
         border: 3px solid transparent;
         transform: skewX(-10deg);
-        background-color: $accent;
         z-index: -1;
         left: 0;
         top: 0;
@@ -173,3 +173,15 @@ input::-webkit-inner-spin-button {
     }
 
 }
+
+// Input number fix
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+

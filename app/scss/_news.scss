@@ -25,15 +25,7 @@
     }
 
     &__date {
-        display: inline-block;
-        margin-bottom: -25px;
-        text-align: center;
-        padding: 15px 25px;
-        color: #ffffff;
-
-        &::before {
-            background-color: $green;
-        }
+        
     }
 
     &__name {
