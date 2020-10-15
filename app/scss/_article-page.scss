@@ -1,0 +1,111 @@
+.article {
+    padding-bottom: 250px;
+
+    &__title {
+        text-align: center;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        margin-bottom: 40px;
+        margin-top: 100px;
+        min-height: 400px;
+        background: url('../images/main-slider-1.jpg') center / cover no-repeat;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        line-height: 30px;
+        color: #626262;
+        margin-bottom: 50px;
+
+        p {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__banner {
+        @include font('proxima-bold');
+        font-size: 30px;
+        line-height: 36px;
+        color: #ffffff;
+        background-color: $bg;
+        padding: 40px 50px;
+        margin: 50px 0;
+    }
+
+    .article__date {
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
+
+    &__comments {
+        margin-top: 90px;
+    }
+}
+
+.comments {
+
+    &__title {
+        @include font('proxima-light');
+        font-size: 18px;
+        margin-bottom: 40px;
+        color: $green;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 40px 50px;
+        margin-bottom: 50px;
+        color: #626262;
+        background-color: #f8f8f8;
+
+        p:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
+}
+.comments-socials {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__caption {
+        @include font('proxima-light');
+        font-size: 18px;
+        color: $accent;
+        margin-right: 60px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-right: 10px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+    }
+
+    &__img {
+    }
+}
