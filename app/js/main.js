@@ -40,6 +40,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    function initTabs() {
+        const tabButtons = document.querySelector('.services-page__items');
+        const tabButton = document.querySelectorAll('.services-page__item');
+        const tabContent= document.querySelectorAll('.services-page__content-item');
+        if (tabButtons) {
+            tabButtons.addEventListener('click', event => {
+                if (event.target.classList.contains('services-page__item')) {
+                    tabContent.forEach(item => {
+                        item.classList.remove('active');
+
+                        if (item.dataset.tab === event.target.dataset.tab) {
+                            item.classList.add('active');
+                        }
+                    });
+                    tabButton.forEach(item => {
+                        item.classList.remove('active');
+                        if (item.dataset.tab === event.target.dataset.tab) {
+                            item.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+    }
+
+    initTabs();
     initMenu();
     initMainSlider();
 });

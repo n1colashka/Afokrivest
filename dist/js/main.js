@@ -40,6 +40,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  function initTabs() {
+    var tabButtons = document.querySelector('.services-page__items');
+    var tabButton = document.querySelectorAll('.services-page__item');
+    var tabContent = document.querySelectorAll('.services-page__content-item');
+
+    if (tabButtons) {
+      tabButtons.addEventListener('click', function (event) {
+        if (event.target.classList.contains('services-page__item')) {
+          tabContent.forEach(function (item) {
+            item.classList.remove('active');
+
+            if (item.dataset.tab === event.target.dataset.tab) {
+              item.classList.add('active');
+            }
+          });
+          tabButton.forEach(function (item) {
+            item.classList.remove('active');
+
+            if (item.dataset.tab === event.target.dataset.tab) {
+              item.classList.add('active');
+            }
+          });
+        }
+      });
+    }
+  }
+
+  initTabs();
   initMenu();
   initMainSlider();
 });
