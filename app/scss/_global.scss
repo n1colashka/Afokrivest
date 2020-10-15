@@ -69,6 +69,14 @@ address {
     text-align: center;
 }
 
+.page-head {
+    text-align: center;
+    &__text {
+        max-width: 810px;
+        margin: 0 auto;
+    }
+}
+
 .title {
     @include font('proxima-light');
     font-size: 48px;

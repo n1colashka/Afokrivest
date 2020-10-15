@@ -1,0 +1,44 @@
+.partners-page {
+    padding-bottom: 150px;
+
+    &__head {
+        margin-bottom: 80px;
+    }
+
+    &__title {
+        margin-bottom: 55px;
+    }
+
+    &__table {
+        max-width: 1330px;
+        margin: 0 auto;
+        overflow: auto;
+
+        table {
+            @include font('proxima-bold');
+            font-size: 18px;
+            line-height: 30px;
+            width: 100%;
+            border: 2px solid #cbcbcb;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        th {
+            
+            text-transform: uppercase;
+            text-align: left;
+            color: #ffffff;
+            background-color: $accent;
+        }
+
+        td {
+            background-color: #f8f8f8;
+        }
+
+        td, th {
+            border: 2px solid #cbcbcb;
+            padding: 20px 40px;
+        }
+    }
+}
