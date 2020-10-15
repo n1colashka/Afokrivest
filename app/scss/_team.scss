@@ -28,6 +28,10 @@
         color: #ffffff;
         margin-left: -60px;
         padding: 30px 20px;
+
+        &::before {
+            background-color: $accent;
+        }
     }
 
     &__img {
