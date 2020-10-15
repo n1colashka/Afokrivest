@@ -75,9 +75,33 @@
             }
         }
     }
+
+    .about {
+        &__items {
+            flex-direction: column;
+        }
+
+        &__item {
+            max-width: 100%;
+        }
+    }
 }
 
 @media (max-width: 991px) {
+    .about-benefits {
+        &__list {
+            justify-content: center;
+        }
+    }
+
+    .about {
+        &__item-title {
+            &::after {
+                width: 80px;
+            }
+        }
+    }
+
     .partners {
 
         padding: 60px 0;
@@ -167,6 +191,19 @@
 }
 
 @media (max-width: 768px) {
+
+    .about {
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+        &__item {
+            margin-bottom: 30px;
+        }
+
+        &__block {
+            background: $bg;
+        }
+    }
 
     .footer {
         padding-top: 40px;
@@ -298,7 +335,7 @@
         }
     }
 
-    .about {
+    .main-form {
         &__inner {
             padding: 60px 0;
         }

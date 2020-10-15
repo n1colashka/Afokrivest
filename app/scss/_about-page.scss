@@ -1,0 +1,83 @@
+.about {
+
+    &__head {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        max-width: 810px;
+        margin: 0 auto;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    &__item {
+        max-width: 670px;
+        margin-bottom: 60px;
+    }
+
+    &__block {
+        background: url('../images/about-bg.jpg') center / cover no-repeat;
+        position: relative;
+        color: #ffffff;
+    }
+
+    &__item-title {
+        @include font('proxima-extrabold');
+        display: inline-block;
+        font-size: 36px;
+        position: relative;
+        margin-bottom: 50px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 195px;
+            background-color: #ffffff;
+            left: calc(100% + 20px);
+            bottom: 0;
+        }
+    }
+}
+
+.about-benefits {
+    padding-top: 115px;
+    padding-bottom: 50px;
+
+    &__title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 445px;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+}
+
+

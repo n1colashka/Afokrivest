@@ -1,18 +1,26 @@
+// Base
 @import "fonts";
 @import "vars";
 @import "global";
 @import "scrollbar";
 
+// Header
 @import "header";
 
+// Sections
 @import "main-slider";
 @import "services";
 @import "benefits";
-@import "about";
+@import "main-form";
 @import "partners";
 @import "team";
 @import "news";
 
+// Pages
+@import "about-page";
+
+// Footer
 @import "footer";
 
+// Media
 @import "media";
