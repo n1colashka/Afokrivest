@@ -129,9 +129,14 @@ address {
     }
 }
 
+.btn--revert {
+    &::before {
+        transform: skewX(-20deg);
+    }
+}
+
 .btn--white {
 
-    
     &::before {
         background-color: transparent;
         border: 3px solid #ffffff;
