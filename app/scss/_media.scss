@@ -103,6 +103,18 @@
     }
 }
 
+@media (max-width: 1040px) {
+    .services {
+        &__item {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        &__list {
+            justify-content: center;
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .services-page {
         &__content {
@@ -135,12 +147,6 @@
 
         &__item {
             max-width: 100%;
-        }
-    }
-
-    .services {
-        &__list {
-            justify-content: center;
         }
     }
 
