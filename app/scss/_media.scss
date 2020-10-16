@@ -611,6 +611,13 @@
             }
         }
     }
+
+    .header {
+
+        &__extra {
+            flex-basis: auto;
+        }
+    }
 }
 
 @media (max-width: 480px) {
