@@ -6,17 +6,18 @@
     }
 
     .benefits {
-        &__inner {
-            flex-direction: column;
+        &__img {
+            max-width: 500px;
+        }
+    }
+
+    .header {
+        &__logo {
+            flex-basis: auto;
         }
 
-        &__info-wrapper {
-            order: -1;
-            margin-bottom: 50px;
-        }
-
-        &__text {
-            max-width: 100%;
+        &__extra {
+            flex-basis: 33.333%;
         }
     }
 }
@@ -37,19 +38,6 @@
             max-width: 100%
         } 
         
-    }
-    
-    .header {
-        &__logo {
-            order: -1;
-            flex-basis: auto;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        &__extra {
-            margin-left: auto;
-        }
     }
 
     .team {
@@ -99,6 +87,39 @@
 
         &__tags-list {
             padding-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1210px) {
+    .header {
+        &__logo {
+            order: -1;
+            flex-basis: auto;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &__extra {
+            flex-basis: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 1110px) {
+    .benefits {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__info-wrapper {
+            order: -1;
+            margin-bottom: 50px;
+        }
+
+        &__text {
+            max-width: 100%;
         }
     }
 }
@@ -618,6 +639,9 @@
 @media (max-width: 1500px) and (min-width: 991px) {
     html {
         font-size: 12px;
+    }
+    .navigation__item {
+        font-size: 16px;
     }
 }
 
