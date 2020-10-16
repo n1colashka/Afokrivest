@@ -1,11 +1,11 @@
 .services {
-    padding-top: 120px;
-    padding-bottom: 95px;
+    padding-top: 7.5rem;
+    padding-bottom: 5.9375rem;
     background-color: $primary;
     color: #ffffff;
 
     &__title {
-        margin-bottom: 65px;
+        margin-bottom: 4.0625rem;
         text-align: center;
     }
 
@@ -14,28 +14,28 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 110px;
+        margin-bottom: 6.875rem;
     }
 
     &__item {
         position: relative;
-        max-width: 730px;
+        max-width: 45.625rem;
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
     }
 
     &__head {
         position: relative;
         display: inline-block;
-        margin-bottom: 35px;
+        margin-bottom: 2.1875rem;
 
         &::after {
             position: absolute;
             content: "";
-            height: 2px;
-            width: 195px;
+            height: 0.125rem;
+            width: 12.1875rem;
             background-color: #ffffff;
-            left: calc(100% + 20px);
+            left: calc(100% + 1.25rem);
             bottom: 0;
         }
     }
@@ -43,12 +43,12 @@
     &__item-title {
         display: block;
         @include font('proxima-extrabold');
-        font-size: 36px;
-        margin-bottom: 20px;
+        font-size: 2.25rem;
+        margin-bottom: 1.25rem;
     }
 
     &__item-text {
-        padding-right: 40px;
+        padding-right: 2.5rem;
     }
 
     &__arrow {

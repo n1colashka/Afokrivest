@@ -1,31 +1,31 @@
 .contacts {
 
     &__title {
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
     }
 
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
     }
 
     &__info {
-        max-width: 675px;
+        max-width: 42.1875rem;
     }
 
     &__text {
         @include font('proxima-bold');
-        font-size: 30px;
-        line-height: 36px;
-        margin-bottom: 100px;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        margin-bottom: 6.25rem;
     }
 
     &__row {
-        margin-top: 50px;
-        padding-left: 55px;
-        background-position: top 13px left;
+        margin-top: 3.125rem;
+        padding-left: 3.4375rem;
+        background-position: top 0.8125rem left;
         background-repeat: no-repeat;
     }
 
@@ -43,27 +43,27 @@
 
     &__item {
         display: block;
-        line-height: 50px;
+        line-height: 3.125rem;
     }
 
     &__form {
         position: relative;
-        max-width: 940px;
+        max-width: 58.75rem;
         width: 100%;
-        padding: 100px;
+        padding: 6.25rem;
         background-color: $green;
         text-align: center;
 
         input {
-            margin-bottom: 30px;
+            margin-bottom: 1.875rem;
         }
 
         input,
         textarea {
             @include font('proxima-light');
-            font-size: 24px;
+            font-size: 1.5rem;
             display: block;
-            padding: 20px 15px;
+            padding: 1.25rem 0.9375rem;
             color: $green;
             border: none;
             background-color: #ffffff;
@@ -75,14 +75,14 @@
         }
 
         textarea {
-            height: 175px;
+            height: 10.9375rem;
             overflow: auto;
         }
     }
 
     &__btn {
         position: absolute;
-        bottom: -20px;
+        bottom: -1.25rem;
         left: 50%;
         transform: translateX(-50%); 
     }

@@ -1,19 +1,19 @@
 .header {
     @include font('proxima-semibold');
-    font-size: 18px;
-    padding-top: 35px;
+    font-size: 1.125rem;
+    padding-top: 2.1875rem;
 
     &__top {
         text-align: right;
     }
 
     &__inner {
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
     }
 
     &__btn {
         display: inline-block;
-        padding: 3px 15px;
+        padding: 0.1875rem 0.9375rem;
         color: #ffffff;
         text-align: center;
         transition: .3s ease;
@@ -29,7 +29,7 @@
 
     &__btn-register {
         background-color: $accent;
-        margin-right: 55px;
+        margin-right: 3.4375rem;
     }
 
     &__main {
@@ -63,11 +63,11 @@
     }
 
     &__lang {
-        margin-left: 60px;
+        margin-left: 3.75rem;
     }
 
     &__lang-item {
-        margin-left: 25px;
+        margin-left: 1.5625rem;
 
         &.active {
             @include font('proxima-black');
@@ -99,7 +99,7 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            height: 2px;
+            height: 0.125rem;
             transform: scaleX(0) translateX(-100%);
             background-color: #000000;
             transition: .3s ease;
@@ -113,7 +113,7 @@
     }
 
     &__item:not(:first-child) {
-        margin-left: 40px;
+        margin-left: 2.5rem;
     }
 
 }
@@ -121,12 +121,12 @@
 .menu-btn {
     display: none;
     border: none;
-    padding: 5px;
+    padding: 0.3125rem;
     background-color: transparent;
     cursor: pointer;
     position: absolute;
-    right: 15px;
-    top: 30px;
+    right: 0.9375rem;
+    top: 1.875rem;
     z-index: 99;
     transition: all .3s ease;
 }
@@ -134,13 +134,13 @@
 .menu-btn::before,
 .menu-btn::after {
     content: "";
-    width: 26px;
-    height: 4px;
-    margin-bottom: 4px;
+    width: 1.625rem;
+    height: 0.25rem;
+    margin-bottom: 0.25rem;
     display: block;
     background-color: $accent;
     transition: all .3s ease;
-    border-radius: 2px;
+    border-radius: 0.125rem;
 }
 
 .menu-btn::after {
@@ -150,10 +150,10 @@
 .menu-btn span {
     background-color: $accent;
     display: block;
-    width: 26px;
-    height: 4px;
-    margin-bottom: 4px;
-    border-radius: 2px;
+    width: 1.625rem;
+    height: 0.25rem;
+    margin-bottom: 0.25rem;
+    border-radius: 0.125rem;
 }
 
 .menu-btn.active span {
@@ -166,7 +166,7 @@
 
 .menu-btn.active::before {
     transform: rotate(45deg);
-    margin-bottom: -12px;
+    margin-bottom: -0.75rem;
 }
 
 .header__navigation.active {

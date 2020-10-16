@@ -1,6 +1,6 @@
 .footer {
-    padding-top: 86px;
-    padding-bottom: 105px;
+    padding-top: 5.375rem;
+    padding-bottom: 6.5625rem;
     background-color: $bg;
 
     &__inner {
@@ -12,8 +12,8 @@
 
     &__col {
         @include font('proxima-light');
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 1.125rem;
+        line-height: 1.875rem;
         color: #ffffff;
 
         &:last-child {
@@ -32,7 +32,7 @@
 
     &__logo {
         img {
-            margin-bottom: 30px;
+            margin-bottom: 1.875rem;
         }
     }
 
@@ -46,7 +46,7 @@
     }
 
     &__item {
-        margin-left: 30px;
+        margin-left: 1.875rem;
         &:first-child {
             margin-left: 0;
         }

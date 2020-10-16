@@ -1,11 +1,11 @@
 .partners {
 
-    padding: 110px 0;
+    padding: 6.875rem 0;
     background-color: #f8f8f8;
 
     &__title {
         text-align: center;
-        margin-bottom: 85px;
+        margin-bottom: 5.3125rem;
     }
 
     &__list {
@@ -16,9 +16,9 @@
     }
 
     &__item {
-        flex-basis: calc(25% - 50px);
-        margin-bottom: 70px;
-        margin-left: 50px;
+        flex-basis: calc(25% - 3.125rem);
+        margin-bottom: 4.375rem;
+        margin-left: 3.125rem;
         &:nth-child(4n + 1) {
             flex-basis: 25%;
             margin-left: 0;

@@ -42,8 +42,9 @@
     .header {
         &__logo {
             order: -1;
-            // flex-basis: auto;
-            margin-right: 15px;
+            flex-basis: auto;
+            margin-right: auto;
+            margin-left: auto;
         }
 
         &__extra {
@@ -182,6 +183,8 @@
     .header {
         &__logo {
             margin-top: 20px;
+            margin-right: 15px;
+            margin-left: 0;
             img {
                 width: 260px;
             }
@@ -470,6 +473,11 @@
 
     .team {
         padding-bottom: 50px;
+
+        &__list {
+            flex-direction: column;
+        }
+
         &__item {
             flex-direction: column;
         }
@@ -595,11 +603,9 @@
     }
 }
 
-
-@media (max-width: 1400px) and (min-width: 768px) {
-    body{ zoom: 60%}
-    .ss-content {
-        &::-webkit-scrollbar {display:none;}
+@media (max-width: 1400px) and (min-width: 991px) {
+    html {
+        font-size: 11px;
     }
 }
 

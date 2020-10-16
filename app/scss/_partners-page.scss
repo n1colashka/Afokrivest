@@ -1,25 +1,25 @@
 .partners-page {
-    padding-bottom: 150px;
+    padding-bottom: 9.375rem;
 
     &__head {
-        margin-bottom: 80px;
+        margin-bottom: 5rem;
     }
 
     &__title {
-        margin-bottom: 55px;
+        margin-bottom: 3.4375rem;
     }
 
     &__table {
-        max-width: 1330px;
+        max-width: 83.125rem;
         margin: 0 auto;
         overflow: auto;
 
         table {
             @include font('proxima-bold');
-            font-size: 18px;
-            line-height: 30px;
+            font-size: 1.125rem;
+            line-height: 1.875rem;
             width: 100%;
-            border: 2px solid #cbcbcb;
+            border: 0.125rem solid #cbcbcb;
             border-collapse: collapse;
             border-spacing: 0;
         }
@@ -37,8 +37,8 @@
         }
 
         td, th {
-            border: 2px solid #cbcbcb;
-            padding: 20px 40px;
+            border: 0.125rem solid #cbcbcb;
+            padding: 1.25rem 2.5rem;
         }
     }
 }

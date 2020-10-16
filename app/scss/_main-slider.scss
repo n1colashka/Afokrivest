@@ -1,5 +1,5 @@
 .main-slider {
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
 
     &__inner {
         position: relative;
@@ -7,22 +7,22 @@
 
     &__head {
         text-align: center;
-        max-width: 1070px;
+        max-width: 66.875rem;
         margin: 0 auto;
     }
 
     &__text {
         @include font('proxima-semibold');
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 
     &__content {
-        max-height: 450px;
-        margin-bottom: 100px;
+        max-height: 28.125rem;
+        margin-bottom: 6.25rem;
     }
 
     &__item {
-        height: 370px;
+        height: 23.125rem;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -32,10 +32,10 @@
 .swiper-panel {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 3.125rem;
     align-items: center;
     position: absolute;
-    bottom: -70px;
+    bottom: -4.375rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -44,7 +44,7 @@
     .swiper-pagination {
         @include font('proxima-thin');
         color: $green;
-        font-size: 48px;
+        font-size: 3rem;
     }
     .swiper-button-prev,
     .swiper-button-next {
@@ -52,7 +52,7 @@
 
         &::after {
             font-weight: bold;
-            font-size: 26px;
+            font-size: 1.625rem;
         }
     }
     .swiper-button-next {

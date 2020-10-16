@@ -1,8 +1,8 @@
 .blog {
-    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
 
     &__title {
-        margin-bottom: 90px;
+        margin-bottom: 5.625rem;
     }
 
     &__inner {
@@ -12,39 +12,39 @@
     }
 
     &__content {
-        margin-right: 130px;
+        margin-right: 8.125rem;
     }
 
     &__item {
         position: relative;
-        padding-bottom: 75px;
-        margin-bottom: 100px;
+        padding-bottom: 4.6875rem;
+        margin-bottom: 6.25rem;
 
         &::after {
             position: absolute;
             content: "";
             left: 0;
             bottom: 0;
-            height: 2px;
-            width: 195px;
+            height: 0.125rem;
+            width: 12.1875rem;
             background-color: #000000;
         }
     }
 
     &__img {
-        margin-bottom: 35px;
+        margin-bottom: 2.1875rem;
     }
 
     &__date {
         position: absolute;
-        right: 140px;
-        top: -25px;
-        padding: 10px 15px;
+        right: 8.75rem;
+        top: -1.5625rem;
+        padding: 0.625rem 0.9375rem;
     }
 
     &__panel {
         background-color: #f8f8f8;
-        padding: 10px 95px;
+        padding: 0.625rem 5.9375rem;
     }
 
     &__panel-content {
@@ -63,13 +63,13 @@
     &__panel-item {
         display: flex;
         align-items: center;
-        margin-left: 40px;
+        margin-left: 2.5rem;
         color: $accent;
-        font-size: 12px;
+        font-size: 0.75rem;
 
         span {
             display: inline-block;
-            margin-left: 12px;
+            margin-left: 0.75rem;
         }
         
         &:first-child {
@@ -97,28 +97,28 @@
     }
 
     &__name {
-        font-size: 36px;
-        line-height: 36px;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
         @include font('proxima-bold');
     }
 }
 
 .aside {
 
-    max-width: 440px;
+    max-width: 27.5rem;
     width: 100%;
 
     &__search {
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
         
         button {
             position: absolute;
             border: none;
             background: url('../images/search.png') left center no-repeat;
-            width: 40px;
-            height: 38px;
-            left: 30px;
+            width: 2.5rem;
+            height: 2.375rem;
+            left: 1.875rem;
             top: 50%;
             transform: translateY(-50%);
             cursor: pointer;
@@ -126,20 +126,20 @@
         
         input {
             display: inline-block;
-            border: 2px solid $green;
-            padding: 10px 20px 10px 70px;
+            border: 0.125rem solid $green;
+            padding: 0.625rem 1.25rem 0.625rem 4.375rem;
         }
     }
 
     &__categories {
-        margin-bottom: 80px;
+        margin-bottom: 5rem;
     }
 
     &__title {
         @include font('proxima-extrabold');
-        font-size: 36px;
+        font-size: 2.25rem;
         color: #376666;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
 
     &__categories-list { 
@@ -148,29 +148,29 @@
 
     &__categories-item {
         @include font('proxima-bold');
-        font-size: 30px;
-        margin-left: 20px;
+        font-size: 1.875rem;
+        margin-left: 1.25rem;
     }
 
     &__tags-list {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        margin-top: 50px;
-        padding-right: 80px;
+        margin-top: 3.125rem;
+        padding-right: 5rem;
     }
 
     &__tags-item {
         @include font('proxima-light');
-        font-size: 30px;
-        box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.19);
-        margin-bottom: 30px;
-        margin-left: 35px;
+        font-size: 1.875rem;
+        box-shadow: 0rem 0rem 0.875rem 0rem rgba(0, 0, 0, 0.19);
+        margin-bottom: 1.875rem;
+        margin-left: 2.1875rem;
         transition: .3s ease;
 
         a {
             display: inline-block;
-            padding: 20px;
+            padding: 1.25rem;
         }
 
         &:nth-child(2n + 1) {
@@ -178,7 +178,7 @@
         }
 
         &:hover {
-            box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0rem 0rem 1.125rem 0rem rgba(0, 0, 0, 0.5);
         }
     }
 }

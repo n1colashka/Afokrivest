@@ -1,20 +1,20 @@
 .about {
 
     &__head {
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
     }
 
     &__items {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 120px;
-        padding-bottom: 60px;
+        padding-top: 7.5rem;
+        padding-bottom: 3.75rem;
     }
 
     &__item {
-        max-width: 670px;
-        margin-bottom: 60px;
+        max-width: 41.875rem;
+        margin-bottom: 3.75rem;
     }
 
     &__block {
@@ -26,28 +26,28 @@
     &__item-title {
         @include font('proxima-extrabold');
         display: inline-block;
-        font-size: 36px;
+        font-size: 2.25rem;
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
 
         &::after {
             position: absolute;
             content: "";
-            height: 2px;
-            width: 195px;
+            height: 0.125rem;
+            width: 12.1875rem;
             background-color: #ffffff;
-            left: calc(100% + 20px);
+            left: calc(100% + 1.25rem);
             bottom: 0;
         }
     }
 }
 
 .about-benefits {
-    padding-top: 115px;
-    padding-bottom: 50px;
+    padding-top: 7.1875rem;
+    padding-bottom: 3.125rem;
 
     &__title {
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
         text-align: center;
     }
 
@@ -63,13 +63,13 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        max-width: 445px;
+        max-width: 27.8125rem;
         width: 100%;
-        margin-bottom: 70px;
+        margin-bottom: 4.375rem;
     }
 
     &__img {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
 
 }
