@@ -24,12 +24,12 @@
 
     &__scroll-line {
         position: absolute;
-        right: 0.4375rem;
+        right: 6px;
         top: 50%;
         transform: translateY(-50%);
         background: url('../images/scrollbar.svg') center no-repeat;
         height: 100%;
-        width: 0.75rem;
+        width: 12px;
         z-index: -1;
     }
 
