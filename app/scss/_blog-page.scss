@@ -25,8 +25,8 @@
             content: "";
             left: 0;
             bottom: 0;
-            height: 0.125rem;
-            width: 12.1875rem;
+            height: 2px;
+            width: 195px;
             background-color: #000000;
         }
     }
@@ -116,9 +116,9 @@
             position: absolute;
             border: none;
             background: url('../images/search.png') left center no-repeat;
-            width: 2.5rem;
-            height: 2.375rem;
-            left: 1.875rem;
+            width: 40px;
+            height: 38px;
+            left: 30px;
             top: 50%;
             transform: translateY(-50%);
             cursor: pointer;
@@ -126,8 +126,8 @@
         
         input {
             display: inline-block;
-            border: 0.125rem solid $green;
-            padding: 0.625rem 1.25rem 0.625rem 4.375rem;
+            border: 2px solid $green;
+            padding: 10px 20px 10px 70px;
         }
     }
 
