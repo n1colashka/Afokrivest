@@ -138,6 +138,12 @@
         }
     }
 
+    .services {
+        &__list {
+            justify-content: center;
+        }
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -603,7 +609,7 @@
     }
 }
 
-@media (max-width: 1400px) and (min-width: 991px) {
+@media (max-width: 1500px) and (min-width: 991px) {
     html {
         font-size: 10px;
     }
